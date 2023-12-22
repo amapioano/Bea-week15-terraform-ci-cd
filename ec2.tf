@@ -3,7 +3,7 @@ resource "aws_instance" "server1" {
  ami = data.aws_ami.ami1.id
  tags ={
     Name = "Terraform-server"
-    Env = "Dev"
+    Env = "Dev1"
  }
 }
 
