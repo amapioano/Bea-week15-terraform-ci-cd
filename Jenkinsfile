@@ -19,12 +19,12 @@ pipeline {
         }
          stage('plan') {
             steps {
-                sh 'terraforn plan'
+                sh 'terraform plan'
             }
         }
          stage('apply') {
             steps {
-                sh 'terraforn apply --auto-approve'
+                sh 'terraform apply --auto-approve'
             }
         }
     }
