@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('initialize') {
             steps {
-                sh 'terraforn init'
+                sh 'terraform init'
             }
         }
         stage('format the code') {
